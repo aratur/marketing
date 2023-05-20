@@ -1,0 +1,14 @@
+@use './colors' as c;
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: c.$clr-dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'DM Serif Display', serif;
+}

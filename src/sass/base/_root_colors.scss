@@ -1,0 +1,7 @@
+@use './colors' as *;
+
+:root {
+  // primary colors
+  --clr-white: #{$clr-white};
+  --clr-dark: #{$clr-dark};
+}
