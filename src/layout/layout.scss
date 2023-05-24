@@ -1,0 +1,10 @@
+.main {
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-areas: '. main .';
+  margin: 0 auto;
+}
+
+.main > * {
+  grid-area: main;
+}

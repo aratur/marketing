@@ -1,11 +1,11 @@
 import React from 'react';
 import { screen, render } from '@testing-library/react';
-import App from '../App';
+import Dashboard from '../features/Dashboard/Dashboard';
 
 describe('ButtonCustomized', () => {
   it('calls prop function when clicked', () => {
-    render(<App />);
-    const element = screen.getByText(/Starter/i);
+    render(<Dashboard />);
+    const element = screen.getByText(/Dashboard/i);
     expect(element).toBeInTheDocument();
   });
 });

@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './sass/main.scss';
+import AuthContextProvider from './state/AuthContext/AuthContext';
+import Router from './router/routes';
+import './sass/reset.scss';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <Router />
+    </AuthContextProvider>
   </React.StrictMode>
 );
